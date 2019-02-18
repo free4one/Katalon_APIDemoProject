@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2019-02-18 16:41:26,2019-02-18 16:41:51,25.004s,FAILED
+,,,,,,
+Test Cases/TestHTTPMethods,,,2019-02-18 16:41:26,2019-02-18 16:41:51,24.686s,FAILED
+"sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2019-02-18 16:41:27,2019-02-18 16:41:51,24.242s,FAILED
