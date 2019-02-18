@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2019-02-18 15:14:51,2019-02-18 15:15:01,9.800s,FAILED
+,,,,,,
+Test Cases/ListUsersTest,,,2019-02-18 15:14:51,2019-02-18 15:14:58,6.320s,FAILED
+"sendRequest(findTestObject(""UserRestService/ListUsers""))",,,2019-02-18 15:14:52,2019-02-18 15:14:57,4.698s,PASSED
+"response = sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2019-02-18 15:14:57,2019-02-18 15:14:58,1.005s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2019-02-18 15:14:58,2019-02-18 15:14:58,0.032s,PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2019-02-18 15:14:58,2019-02-18 15:14:58,0.026s,PASSED
+"verifyElementsCount(response, ""data"", 2, CONTINUE_ON_FAILURE)",,,2019-02-18 15:14:58,2019-02-18 15:14:58,0.084s,FAILED
+"verifyResponseStatusCodeInRange(response, 100, 200)",,,2019-02-18 15:14:58,2019-02-18 15:14:58,0.040s,FAILED
+,,,,,,
+Test Cases/TestHTTPMethods,,,2019-02-18 15:14:58,2019-02-18 15:15:01,3.147s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2019-02-18 15:14:58,2019-02-18 15:14:59,1.051s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/Delete User""))",,,2019-02-18 15:14:59,2019-02-18 15:15:00,0.599s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/Update User""))",,,2019-02-18 15:15:00,2019-02-18 15:15:00,0.652s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/Create User""))",,,2019-02-18 15:15:00,2019-02-18 15:15:01,0.612s,PASSED
